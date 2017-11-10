@@ -13,8 +13,8 @@ function AppFacebook(app, passport, AppFacebookStrategy) {
     });
 
     passport.use(new AppFacebookStrategy({
-        clientID : "1649437005348937",
-        clientSecret : "5452e5edeb1623b12b87efd4692feb98",
+        clientID : [CLIENT_ID],
+        clientSecret : [CLIENT_SECRET],
     }, (accessToken, refreshToken, profile, done)=>{
         console.log('======== APP PROFILE ========')
         console.log(profile)

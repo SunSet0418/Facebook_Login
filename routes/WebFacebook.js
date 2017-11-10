@@ -15,8 +15,8 @@ function WebFacebook(app, passport, WebFacebookStrategy) {
     });
 
     passport.use(new WebFacebookStrategy({ //facebook 로그인을 위한 토큰 로그인
-            clientID: '1649437005348937',
-            clientSecret: '5452e5edeb1623b12b87efd4692feb98',
+            clientID: [CLIENT_ID],
+            clientSecret: [CLIENT_SECRET],
             callbackURL: "/auth/facebook/callback",
             profileFields: ['id', 'email', 'gender', 'link', 'locale', 'name', 'timezone', 'verified', 'displayName'],
         },
